@@ -14,7 +14,9 @@
 <meta name="viewport" content="width=device-width,initial-scale-1">
 
 <!-- CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 <!-- jQuery livraria -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,7 +26,7 @@
 
 <style type="text/css">
 	.navbar{
-		margin-bottom:0px;
+		margin-bottom: 0px;
 		background-color: #fff;
 }
 </style>
