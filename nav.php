@@ -1,28 +1,46 @@
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">BYTE.ATTACK</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-       
-      </ul>
-    </div>
+<nav class="navbar navbar-expand-sm navbar-light bg-white">
+  <img src="images/LogoByte.jpeg" width="220px" alt="">
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-left: 10px;">
+      <li class="nav-item active">
+        <a class="navbar-brand" href="#" style="padding-left:20px;" style="height:100px">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Sobre nós</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="navbar-brand dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item  navbar-brand" href="#">Designer</a>
+          <a class="dropdown-item navbar-brand" href="#">Front-end</a>
+        </div>
+      </li>
+    </ul>
+    <!--<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="padding: 10px;" class="navbar-brand"><span class="glyphicon glyphicon-envelope" style="padding-top: 15px;"> Contato</a></li>
+
+
+        <?php if(empty($_SESSION['ID'])) { ?>
+		    <li><a href="formlogon.php" class="navbar-brand"><span class="glyphicon glyphicon-user" style="padding: 10px;"> Logon</a></li>
+        <?php } else {
+      if($_SESSION['Status']==0){
+        $consulta_usuario = $pdo->query("select nm_usuario from tbL_usuario where cd_usuario = '$_SESSION[ID]' ");
+        $exibe_usuario = $consulta_usuario->fetch(PDO::FETCH_ASSOC);
+          ?>
+       		<li><a href="#"><span class="glyphicon glyphicon-user"><?php echo $exibe_usuario['nm_usuario'];?> Logon</a></li>
+          <li><a href="sair.php"><span class="glyphicon glyphicon-log-out"> Sair</a></li>
+        <?php } else {?>
+          <li><a href="adm.php"><button class="btn btn-sm btn-danger">Administrador</button></a></li>
+          <li><a href="sair.php"><span class="glyphicon glyphicon-log-out"> Sair</a></li>
+        <?php } }?>
+  </ul>
   </div>
 </nav>
-<script>
-  
-    
-</script>
