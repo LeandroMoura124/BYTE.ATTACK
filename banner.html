@@ -13,7 +13,11 @@
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
+   
+    <!--Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <style>
 
         .carousel-item{
             height: 80rem;
@@ -51,6 +55,10 @@
         }
         .welcome h1{
             color: royalblue;
+        }
+        .welcome .home-btn a{
+            color: #fff;
+            font-size: 15px;
         }
         .welcome .home-btn{
             margin-top: 10px;
@@ -162,7 +170,104 @@
             text-align: left;
            
         }
+
+        /*Testemunhas*/
+        #testimonials{
+            position: relative;
+            padding-top: 400px;
+            padding-bottom: 100px;
+        }
+        #testimonials .col-md-4{
+            padding: 10px 30px;
+        }
+        #testimonials img{
+           
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: -30px;
+            margin-top: -40px;
+            border: 5px solid #fff;
+            margin-bottom: 30px;
+        }
+        .review{
+            font-size: 16px;
+            padding: 10px 10px 10px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+        }
+        .review .fa-twitter{
+            color: #013f7e;
+        }
+
+        #testimonials h1{
+            margin-bottom: 40px;
+            color: #013f7e;
+            font-size: 40px;
+        }
+        #testimonials p{
+            padding-bottom:30px;
+            font-size: medium;
+        }
+        #testimonials .middle{
+            margin-bottom: -30px;
+            margin-top: -30px;
+        }
+
+        .subscribe{
+            margin-top: 200px;
+            padding: 40px 20px;
+            background-color: #013f7e ;
+            position: relative;
+            box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+        }
+        .subscribe h3{
+            font-size: 25px;
+        }
+        .subscribe p{
+            font-size: medium;
+        }
+        
+        .subscribe h3, .subscribe p{
+            color: #fff;
+        }
+        .subscribe .input-group{
+            border-radius: 20px;
+            background: #fff;
+            max-width: 700px;
+            margin: 10px auto;
+            padding: 15px;
+            height: 120px;
+        }
+        .subscribe .form-control{
+            border: none;
+            box-shadow: none;
+            background: transparent;
+        }
+        .subscribe .form-control:focus{
+            box-shadow: none;
+           
+        }
+        
+        .subscribe .input-group-append{
+            background-image: linear-gradient(to right, #1c03b5, #5c8bef);
+            font-size: medium;
+            border-radius: 30px;
+            
+        }
+        .subscribe .input-group-text{
+            background:transparent;
+            border: none;
+            color: #fff;
+        }
+        .subscribe .btn:focus{
+          box-shadow: none;
+          
+        }
+
+
     </style>
+    
 
 </head>
   <body>
@@ -220,7 +325,7 @@
             <h4>Fundada em 2020,  a BYTE.ATTACK é uma empresa de tecnologia que fornece desenvolvedores 
             front-end, back-end, analista de sistemas e muito mais...
             </h4>
-            <button type="submit" class="btn home-btn" ><a href="#welcome" style="text-decoration: none;">Conheça-nos</a></button>
+            <button type="" class="btn home-btn" ><a href="#welcome" style="text-decoration: none;">Conheça-nos</a></button>
         </div>
     </div>
 </section>
@@ -325,7 +430,52 @@
     
     <!-------------------------Testemunhas------------------------->
 
-    <section class="testimonials"></section>
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="text-center">Testemunhas</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio eos, dolorum laboriosam neque quos eligendi reprehenderit, libero fugiat tenetur maiores voluptates praesentium temporibus accusamus, eveniet tempore laudantium molestias ipsam.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab saepe cupiditate eum explicabo nobis culpa id sit quisquam<br><i class="fa fa-twitter"></i><span>@username</span></p>  
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="col-md-4 middle">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab saepe cupiditate eum explicabo nobis culpa id sit quisquam<br><i class="fa fa-twitter"></i><span>@username</span></p>  
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab saepe cupiditate eum explicabo nobis culpa id sit quisquam<br><i class="fa fa-twitter"></i><span>@username</span></p>  
+                    <img src="images/user3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--Subscribe-->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe text-center">
+            <form name="frmusuario" method="post" action="validamensagem.php">
+                <h3>Envie-nos alguma mensagem abaixo!</h3>
+                <p>Como intuito de melhor amparo e evolução aos nosso clientes, digite alguma sugestão ou envie-nos dúvidas.</p>
+                <div class="input-group">
+                    <input name="text" type="text" class="form-control" style="font-size: 20px;"  placeholder="Digite sua mensagem aqui">
+                
+                <div class="input-group-append">
+                    <button type="submit" class="input-group-text btn" style="font-size: 15px;">Enviar</button>
+                </div>
+                </div>
+               
+            </form>    
+            </div>  
+
+
+          
+        </div>
+    </section>
+
+
+    <!--Contato-->
+    <section id=""></section>
 </body>
 </html>
