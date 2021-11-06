@@ -25,7 +25,18 @@ insert into tbl_usuario
 select * from tbl_usuario;
 
 
+create table tbtext(
+cd_text int primary key,
+txt_text mediumtext not null
 
+
+
+) DEFAULT CHARSET = utf8;
+
+select txt_text from tbtext;
+
+
+drop table tbtext;
 
 create User 'LeoByteAttack'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ByteAttack123';
 grant all privileges on ByteAttack.* TO 'LeoByteAttack'@'localhost' with grant option;

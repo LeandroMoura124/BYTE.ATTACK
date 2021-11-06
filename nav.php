@@ -25,7 +25,7 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>-->
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php#contato" style="padding: 10px;" class="navbar-brand"><span class="glyphicon glyphicon-envelope" style="padding-top: 6px;"> Contato</a></li>
+        <li><a href="index.php#footer" style="padding: 10px;" class="navbar-brand"><span class="glyphicon glyphicon-envelope" style="padding-top: 6px;"> Contato</a></li>
 
 
         <?php if(empty($_SESSION['ID'])) { ?>

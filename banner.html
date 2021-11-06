@@ -265,6 +265,53 @@
           
         }
 
+        /*------------------------- Footer ---------------------*/
+
+        #footer{
+            position: relative;
+            margin-top: 0px;
+            padding: 150px;
+            background-color: #efefef ;
+            color: #013f7e;
+        }
+
+        .footer-logo{
+            width: 150px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        #footer h1{
+            font-size: 15px;
+            text-align: left;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        #footer p{
+            font-size: medium;
+            text-align: left;
+        }
+        /*#footer .city{
+            margin-left: 37px;
+        }*/
+        #footer .fa{
+            padding-right: 20px;
+            font-size: 15px ;
+        }
+        #footer hr{
+            margin-top: 10px;
+            background-color: rgb(24, 129, 228);
+        }
+        #footer .fa-heart-o{
+            color: blue;
+            font-size: 17px;
+        }
+        #footer .copyright{
+           margin-bottom: -80px ;
+           text-align: center;
+           font-size: 15px;
+        }
+
+
 
     </style>
     
@@ -298,7 +345,7 @@
             </div>
         </div>
         <div class="carousel-item "  data-interval="1800">
-            <div class="overlay-image" style="background-image: url(Images/bannerByte2.jpg);"></div>
+            <div class="overlay-image" style="background-image: url(Images/professional-programmer-working-late-in-the-dark-office.jpg);"></div>
             <div class="container">
             </div>
         </div>
@@ -451,15 +498,15 @@
         </div>
     </section>
 
-    <!--Subscribe-->
+    <!--Envie uma mensagem-->
     <section class="subscribe">
         <div class="container">
             <div class="subscribe text-center">
-            <form name="frmusuario" method="post" action="validamensagem.php">
+            <form method="post" action="inserirmensagem.php"  name="">
                 <h3>Envie-nos alguma mensagem abaixo!</h3>
-                <p>Como intuito de melhor amparo e evolução aos nosso clientes, digite alguma sugestão ou envie-nos dúvidas.</p>
+                <p>Com intuito de melhor amparo e evolução aos nosso clientes, digite alguma sugestão ou envie-nos dúvidas.</p>
                 <div class="input-group">
-                    <input name="text" type="text" class="form-control" style="font-size: 20px;"  placeholder="Digite sua mensagem aqui">
+                    <input name="txttext" type="text" class="form-control" style="font-size: 20px;"  placeholder="Digite sua mensagem aqui">
                 
                 <div class="input-group-append">
                     <button type="submit" class="input-group-text btn" style="font-size: 15px;">Enviar</button>
@@ -475,7 +522,42 @@
     </section>
 
 
-    <!--Contato-->
-    <section id=""></section>
+    <!--footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/LogoByte.jpeg" class="" width="200px" style="padding-top: 15px;" >
+                    <p style="padding-top: 13px;">Siga-nos nas redes sociais para contato ou envie-nos email. O melhor está aqui!!!</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>Text</h1>
+                    <p>Exemplo Text</p>
+                    <p>Exemplo Text</p>
+                    <p>Exemplo Text</p>
+                    <p>Exemplo Text</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>Contato</h1>
+                    <p><i class="fa fa-phone-square"></i> +55 11965803670</p>
+                    <p><i class="fa fa-envelope"></i> byte.attack@gmail.com</p>
+                    <p><i class="fa fa-home"></i>Instituição de Ensino Basilides de Godoy</p>
+                    <p class="city">R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>Siga-nos</h1>
+                    <p><i class="fa fa-facebook-official"></i><a href=""> Facebook</a></p>
+                    <p><i class="fa fa-instagram"></i><a href=""> Instagram</a></p>
+                    <p><i class="fa fa-linkedin"></i><a href=""> Linkedin</a></p>
+                    <p><i class="fa fa-twitter"></i><a href=""> Twitter</a></p>
+                   
+                </div>
+            </div> <hr>
+            <p class="copyright">Todos direitos reservados <i class="fa fa-heart-o">@Byte.Attack</i> </p>
+        </div>
+    </section>
 </body>
 </html>
