@@ -46,6 +46,8 @@
 	include 'Conexao.php';
     include 'nav.php';
     include 'banner.html';
+	include 'formEmail.php';
+	include 'footer.html';
 	
 	
 	

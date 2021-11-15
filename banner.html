@@ -46,7 +46,6 @@
         
         .welcome{
             padding: 15px 100px;
-
             z-index: 1000;
             top: 20px;
             position: relative;
@@ -214,56 +213,7 @@
             margin-top: -30px;
         }
 
-        .subscribe{
-            margin-top: 200px;
-            padding: 40px 20px;
-            background-color: #013f7e ;
-            position: relative;
-            box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
-        }
-        .subscribe h3{
-            font-size: 25px;
-        }
-        .subscribe p{
-            font-size: medium;
-        }
-        
-        .subscribe h3, .subscribe p{
-            color: #fff;
-        }
-        .subscribe .input-group{
-            border-radius: 20px;
-            background: #fff;
-            max-width: 700px;
-            margin: 10px auto;
-            padding: 15px;
-            height: 120px;
-        }
-        .subscribe .form-control{
-            border: none;
-            box-shadow: none;
-            background: transparent;
-        }
-        .subscribe .form-control:focus{
-            box-shadow: none;
-           
-        }
-        
-        .subscribe .input-group-append{
-            background-image: linear-gradient(to right, #0e0d13, #135dfc);
-            font-size: medium;
-            border-radius: 30px;
-            
-        }
-        .subscribe .input-group-text{
-            background:transparent;
-            border: none;
-            color: #fff;
-        }
-        .subscribe .btn:focus{
-          box-shadow: none;
-          
-        }
+    
 
         /*------------------------- Footer ---------------------*/
 
@@ -310,6 +260,79 @@
            text-align: center;
            font-size: 15px;
         }
+
+
+
+        /*----------------------------Responsividade---------------------*/
+        
+        @media (max-width:600px){
+        .welcome{
+            padding: 15px 50px;
+            z-index: 1000;
+            top: 20px;
+            position: relative;
+            background-color: #fff ;
+            box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+        }
+
+        #about{
+            position: relative;
+            padding-top: 900px;
+            padding-bottom: 100px;
+        }
+        #about .col-md-6 {
+        padding: 20px 25px;
+        }
+        #about #text1{
+            padding: 20px 30px 0px 20px;           
+        }
+
+        #services{
+            position:relative;
+            padding-top: 990px;
+            background-color: #efefef4d;
+        }
+        #feature{
+            padding-top: 950px;
+            padding-bottom: 150px;
+        }
+        .feature-box{
+            height: 120px;
+            padding: 90px 0px 40px 0px;
+            
+        }
+        #feature .col-md-6 {
+            padding: 20px;
+        }
+        .feature-box{
+            margin-bottom: 20px;
+        }
+        #feature .col-md-6 img{
+            position: relative;
+            margin-bottom: 0px;
+        }
+        #testimonials{
+            position: relative;
+            padding-top: 850px;
+            padding-bottom: 100px;
+        }
+        .subscribe{
+            margin-top: 300px;
+            padding: 40px 30px;
+        }
+        #footer{
+            position: relative;
+            margin-top: 490px;
+            padding: 200px;
+            background-color: #efefef ;
+            color: #013f7e;
+        }
+        #footer .col-md-3 img{
+            margin-left: 125px;
+        }
+
+        }
+
 
 
 
@@ -498,11 +521,11 @@
         </div>
     </section>
 
-    <!--Envie uma mensagem-->
+    <!--Envie uma mensagem-
     <section class="subscribe">
         <div class="container">
             <div class="subscribe text-center">
-            <form method="post" action="inserirmensagem.php"  name="">
+            <form method="post" action="inserirmensagem.php"  name="mensagem">
                 <h3>Envie-nos alguma mensagem abaixo!</h3>
                 <p>Com intuito de melhor amparo e evolução aos nosso clientes, digite alguma sugestão ou envie-nos dúvidas.</p>
                 <div class="input-group">
@@ -519,10 +542,10 @@
 
           
         </div>
-    </section>
+    </section>-->
 
 
-    <!--footer-->
+    <!--footer-
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -551,6 +574,7 @@
 
                 <div class="col-md-3">
                     <h1>Siga-nos</h1>
+                    <p><i class="fa fa-github" style="color: #000;"></i><a href="https://github.com/LeandroMoura124" style="color:#000">GitHub</a></p>
                     <p><i class="fa fa-facebook-official" style="color: #000;"></i><a href="">Facebook</a></p>
                     <p><i class="fa fa-instagram" style="color: #000;"></i><a href="">Instagram</a></p>
                     <p><i class="fa fa-linkedin" style="color: #000;"></i><a href="">Linkedin</a></p>
@@ -560,6 +584,6 @@
             </div> <hr>
             <p class="copyright">Todos direitos reservados <i class="fa fa-heart-o">@Byte.Attack</i> </p>
         </div>
-    </section>
+    </section>-->
 </body>
 </html>

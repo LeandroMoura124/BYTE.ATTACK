@@ -25,15 +25,16 @@ insert into tbl_usuario
 select * from tbl_usuario;
 
 
-create table tbtext(
-cd_text int primary key,
-txt_text mediumtext not null
+create table tbemail(
+cd_usuario int primary key auto_increment,
+ds_email varchar(80) not null
 
 
 
 ) DEFAULT CHARSET = utf8;
 
-select txt_text from tbtext;
+select * from tbemail;
+truncate tbemail;
 
 
 drop table tbtext;
