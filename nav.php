@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-white">
-  <img src="images/LogoByte.jpeg" width="220px" alt="">
+  <img src="images/WhatsApp Image 2021-11-09 at 18.22.11.jpeg" width="220px" alt="">
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
       aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,8 +15,10 @@
       <li class="nav-item dropdown">
         <a class="navbar-brand dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
         <div class="dropdown-menu" aria-labelledby="dropdownId">
-          <a class="dropdown-item  navbar-brand" href="index.php#services">Designer</a>
           <a class="dropdown-item navbar-brand" href="index.php#services">Front-end</a>
+          <a class="dropdown-item  navbar-brand" href="index.php#services">Analista de Sistemas</a>
+          <a class="dropdown-item  navbar-brand" href="index.php#services">Designer</a>
+
         </div>
       </li>
     </ul>
